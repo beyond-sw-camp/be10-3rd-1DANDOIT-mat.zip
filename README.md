@@ -104,15 +104,15 @@
 
   <h4> - 리스트 댓글 등록 </h4>
 
-   ![List-Comment.gif](assets/gifs/list/List-Comment.gif)
+  ![List-Comment.gif](assets/gifs/list/List-Comment.gif)
 
   <h4> - 리스트 맛집 가져오기 </h4>
   
-   ![List-GetMatzip.gif](assets/gifs/list/List-GetMatzip.gif)
+  ![List-GetMatzip.gif](assets/gifs/list/List-GetMatzip.gif)
   
   <h4> - 리스트 -> 유저 리스트 목록 </h4>
   
-   ![List-Lists.gif](assets/gifs/list/List-Lists.gif)
+  ![List-Lists.gif](assets/gifs/list/List-Lists.gif)
   
   <h4> - 전체 리스트 -> 리스트 상세조회 </h4>
   

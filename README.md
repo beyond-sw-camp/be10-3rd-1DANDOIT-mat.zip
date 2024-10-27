@@ -1,11 +1,55 @@
 # MAT.zip
 
-## TEAM
-| [![](https://avatars.githubusercontent.com/u/74580387)](https://github.com/WhooGeek) | [![](https://avatars.githubusercontent.com/u/136975414)](https://github.com/wildcat222) | [![](https://avatars.githubusercontent.com/u/134343781)](https://github.com/catnine11) | [![](https://avatars.githubusercontent.com/u/115945994)](https://github.com/hcbak) | [![](https://avatars.githubusercontent.com/u/173458380)](https://github.com/JIYOUNG-22) | [![](https://avatars.githubusercontent.com/u/138023884)](https://github.com/leebackcoding)|
-|---|---|---|---|---|---|
-| 김윤후 | 김태영 | 남가람 | 박희찬 | 윤지영 | 이창윤 |
+## 👥 TEAM
+| [![](https://avatars.githubusercontent.com/u/74580387)](https://github.com/WhooGeek) | [![](https://avatars.githubusercontent.com/u/136975414)](https://github.com/wildcat222) | [![](https://avatars.githubusercontent.com/u/134343781)](https://github.com/catnine11) | [![](https://avatars.githubusercontent.com/u/115945994)](https://github.com/hcbak) | [![](https://avatars.githubusercontent.com/u/173458380)](https://github.com/JIYOUNG-22) | [![](https://avatars.githubusercontent.com/u/138023884)](https://github.com/leebackcoding) |
+|----------|----------|----------|----------|----------|---------|
+| 김윤후  | 김태영  | 남가람  | 박희찬 | 윤지영 | 이창윤 |
+| 리스트,<br/>메인페이지| 회원 프로필 | 회원관리,<br>보안  | 헤더,<br/> 리뷰(지도) | 게시판  | 관리자페이지 |
 
-## 목차
+## 📚 기술 스택
+
+-----------
+
+<p><strong>Backend <br></strong>
+<br>
+  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
+  <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
+  <img src="https://img.shields.io/badge/spring data JPA-6DB33F?style=for-the-badge&logo=hibernate&logoColor=white">
+  <img src="https://img.shields.io/badge/spring%20security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white">
+  <img src="https://img.shields.io/badge/mybatis-E9572B?style=for-the-badge&logo=&logoColor=white">
+</p>
+
+<p><strong>Frontend <br></strong>
+<br>
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> 
+  <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
+</p>
+
+<p><strong>DB <br></strong>
+<br>
+  <img src="https://img.shields.io/badge/mariadb-4479A1?style=for-the-badge&logo=mariadb&logoColor=white">
+</p>
+
+<p><strong>Tool <br></strong>
+<br>
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+  <img src="https://img.shields.io/badge/gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white">
+  <img src="https://img.shields.io/badge/junit5-25A162?style=for-the-badge&logo=junit5&logoColor=white">
+  <img src="https://img.shields.io/badge/google%20sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white">
+  <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+  <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+  <img src="https://img.shields.io/badge/swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black">
+</p>
+
+
+
+## 📄 목차
+
+-----------
 - [MAT.zip](#matzip)
   - [TEAM](#team)
   - [목차](#목차)
@@ -41,6 +85,40 @@
 ### 3-3. 테스트 결과 보고서
 
 <details>
+  <summary><strong> 메인 화면 </strong></summary>
+  <h4> - 메인화면 </h4>
+
+![메인화면](assets/gifs/main/MainHome.gif)
+
+  <h4> - 메인화면 -> 리스트 </h4>
+
+![MainHome-List.gif](assets/gifs/main/MainHome-List.gif)
+
+  <h4> - 메인화면 -> 전체 리스트 </h4>
+
+![MainHome-ListAll.gif](assets/gifs/main/MainHome-ListAll.gif)
+
+  <h4> - 메인화면 -> 게시판 </h4>
+
+![MainHome-Post.gif](assets/gifs/main/MainHome-Post.gif)
+
+  <h4> - 메인화면 -> 게시판 리스트 </h4>
+
+![MainHome-PostList.gif](assets/gifs/main/MainHome-PostList.gif)
+</details>
+
+<details>
+  <summary><strong> 회원가입 </strong></summary>
+  <h4> - 회원가입 - 이메일인증 </h4>
+
+  ![이메일인증](assets/gifs/auth/register_sendemail.gif)
+
+  <h4> - 회원가입 </h4>
+
+  ![회원가입](assets/gifs/auth/register.gif)
+</details>
+
+<details>
   <summary><strong> 로그인 </strong></summary>
   <h4> - 로그인 </h4>
 
@@ -62,28 +140,6 @@
 
 ![resetPassword](assets/gifs/auth/resetPassword.gif)
 
-</details>
-<details>
-  <summary><strong> 메인 화면 </strong></summary>
-  <h4> - 메인화면 </h4>
-
-  ![메인화면](assets/gifs/main/MainHome.gif)
-
-  <h4> - 메인화면 -> 리스트 </h4>
-
-  ![MainHome-List.gif](assets/gifs/main/MainHome-List.gif)
-  
-  <h4> - 메인화면 -> 전체 리스트 </h4>
-
-  ![MainHome-ListAll.gif](assets/gifs/main/MainHome-ListAll.gif)
-
-  <h4> - 메인화면 -> 게시판 </h4>
-
-  ![MainHome-Post.gif](assets/gifs/main/MainHome-Post.gif)
-
-  <h4> - 메인화면 -> 게시판 리스트 </h4>
-
-  ![MainHome-PostList.gif](assets/gifs/main/MainHome-PostList.gif)
 </details>
 
 <details>
@@ -161,17 +217,38 @@
 <details>
 <summary><strong>회원정보</strong></summary>
 
-  <h4> - 회원정보 수정 </h4>
-
-![updateUserInfo](assets/gifs/userInfo/updateUserInfo.gif)
-
   <h4> - 비밀번호 수정 </h4>
 
 ![changePassword](assets/gifs/userInfo/changePassword.gif)
 
+<h4> - 회원정보 수정 </h4>
+
+![updateUserInfo](assets/gifs/userInfo/updateUserInfo2.gif)
+
   <h4> - 회원 탈퇴 </h4>
 
-![deleteUserInfo](assets/gifs/userInfo/deleteUserInfo.gif)
+![deleteUserInfo](assets/gifs/userInfo/deleteUserInfo2.gif)
+
+</details>
+
+<details>
+<summary><strong>보안</strong></summary>
+
+  <h4> - 비회원 접근 거부 </h4>
+
+![changePassword](assets/gifs/security/accessSecurity1_nonmember.gif)
+
+  <h4> - 회원 접근 거부 </h4>
+
+![changePassword](assets/gifs/security/accessSecurity2_member.gif)
+
+  <h4> - 회원 접근 거부 : 관리자페이지 </h4>
+
+![changePassword](assets/gifs/security/accessSecurity4_adminpage.gif)
+
+  <h4> - 약관 미동의 시 회원가입 불가 </h4>
+
+![changePassword](assets/gifs/security/accessSecurity3_term.gif)
 
 </details>
 

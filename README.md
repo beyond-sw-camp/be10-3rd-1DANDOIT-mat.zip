@@ -69,7 +69,9 @@
   <summary><strong> 게시판 </strong></summary>
   <h4> - 게시글 등록 </h4>
 
-![게시글등록](assets/gifs/post/RegistPost.gif)
+![게시글등록](assets/gifs/post/RegistPost1.gif)
+![게시글등록](assets/gifs/post/RegistPost2.gif)
+![게시글등록](assets/gifs/post/RegistPost3.gif)
 
   <h4> - 게시글 수정 </h4>
 

@@ -119,7 +119,6 @@
 
 <details>
 <summary><strong>리스트</strong></summary>
-
   <h4> - 리스트 생성 </h4>
 
   ![ListCreate.gif](assets/gifs/list/ListCreate.gif)

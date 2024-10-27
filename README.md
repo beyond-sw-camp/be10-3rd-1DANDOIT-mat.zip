@@ -33,7 +33,12 @@
 
 [화면 설계서 (Figma)](https://www.figma.com/design/RRkdSm2kuC2M1eGboUZl5M/MAT.ZIP?node-id=0-1&node-type=canvas&t=A4BxdscJTxuUAjuZ-0)
 
-### 3-2. 테스트 결과 보고서
+### 3-2. 기능 명세서
+
+[기능 명세서](https://docs.google.com/spreadsheets/d/e/2PACX-1vQuoSdRuUtVxppUKq-hhxCnWca3t8VJ5ALB-8JETGNk6d0e0Kp7uCAlL-uDPcyGzY7nbvBjtSPW8Z8g/pubhtml?gid=1481795989&single=true)
+
+
+### 3-3. 테스트 결과 보고서
 
 <details>
   <summary><strong> 로그인 </strong></summary>

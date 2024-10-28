@@ -38,6 +38,10 @@ async function handleLogin() {
 
     await router.replace('/');
   } catch (error) {
+    if (error.response.status === 403) {
+      // 서버에서 HttpStatus.Forbidden 반환한 경우
+      alert('이미 탈퇴된 이메일입니다.');
+    }
     errorMessage.value = '이메일 또는 비밀번호가 잘못 되었습니다.<br> 이메일과 비밀번호를 정확히 입력해 주세요';
   }
 }

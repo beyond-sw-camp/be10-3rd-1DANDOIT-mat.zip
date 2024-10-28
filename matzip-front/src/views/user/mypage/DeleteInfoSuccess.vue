@@ -1,12 +1,12 @@
 <script setup>
 import Logo from '@/components/common/Logo.vue';
 import Button from '@/components/auth/Button.vue';
-import {useRouter} from "vue-router";
+import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
-const goToLogin = () => {
-  router.push('/login');
+const goToHome = () => {
+  router.push('/');
 };
 </script>
 
@@ -14,10 +14,9 @@ const goToLogin = () => {
   <div class="complete-page">
     <Logo size="150px" />
 
-    <h1>환영합니다!</h1>
-    <p>다양한 맛집 소식을 만들어주세요.</p>
+    <h1>회원 탈퇴가 완료되었습니다.</h1>
 
-    <Button label="로그인" width="150px" height="45px" @click="goToLogin" />
+    <Button label="홈으로" width="150px" height="45px" @click="goToHome" />
   </div>
 </template>
 
@@ -33,14 +32,10 @@ const goToLogin = () => {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  color: #333;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-p {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
-}
 </style>

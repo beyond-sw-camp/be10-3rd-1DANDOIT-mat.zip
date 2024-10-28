@@ -26,6 +26,7 @@
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> 
   <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
+  <img src="https://img.shields.io/badge/pinia-FFD300?style=for-the-badge&logo=pinia&logoColor=black">
 </p>
 
 <p><strong>DB <br></strong>
@@ -51,14 +52,16 @@
 
 -----------
 - [MAT.zip](#matzip)
-  - [TEAM](#team)
-  - [목차](#목차)
+  - [TEAM](#-team)
+  - [기술 스택](#-기술-스택)
+  - [목차](#-목차)
   - [1. 프로젝트 개요](#1-프로젝트-개요)
   - [2. 프로젝트 주요 기능](#2-프로젝트-주요-기능)
     - [2-0. 백엔드 연동](#2-0-백엔드-연동)
   - [3. 산출물](#3-산출물)
     - [3-1. 화면 설계서 (Figma)](#3-1-화면-설계서-figma)
-    - [3-2. 테스트 결과 보고서](#3-2-테스트-결과-보고서)
+    - [3-2. 기능 명세서](#3-2-기능-명세서)
+    - [3-3. 테스트 결과 보고서](#3-3-테스트-결과-보고서)
   - [4. 회고](#4-회고)
 
 ## 1. 프로젝트 개요

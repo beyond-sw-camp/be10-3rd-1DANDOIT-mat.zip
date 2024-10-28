@@ -13,12 +13,19 @@ const foundEmail = ref(null);
 const isModalOpen = ref(false);
 const router = useRouter();
 
+// 핸드폰 번호 입력 양식 '010-0000-0000'에서 '-'을 제외하고 숫자만 추출
+const formatPhoneForServer = (phone) => {
+  return phone.replace(/\D/g, '');
+};
+
 async function findEmail() {
   if (name.value && phone.value) {
     try {
+      // 번호 포맷 변경(숫자추출)
+      const formattedPhone = formatPhoneForServer(phone.value);
       const response = await axios.post('https://matzipapi.huichan.kr/user/api/v1/auth/find-email', {
         userName: name.value,
-        userPhone: phone.value
+        userPhone: formattedPhone
       });
       // console.log(response.data);
 
@@ -62,7 +69,7 @@ const token = localStorage.getItem('token');
                       @keyup.enter="findEmail"
                       v-model="name" />
           <InputField label="휴대폰 번호"
-                      placeholder="휴대폰 번호를 입력하세요."
+                      placeholder="010-0000-0000"
                       @keyup.enter="findEmail"
                       v-model="phone" />
 

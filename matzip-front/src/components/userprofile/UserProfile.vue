@@ -5,8 +5,25 @@ import {computed, ref, watch} from 'vue';
 import {defineProps} from 'vue';
 import {useAuthStore} from "@/components/stores/auth.js";
 import followerInfo from "@/components/userprofile/FollowerInfo.vue";
+import {useRouter} from "vue-router";
 
 const authStore = useAuthStore();
+const isDropdownOpen = ref(false);
+const selectedOption = ref(""); // 현재 선택된 옵션을 저장
+const router = useRouter();
+const userSeq = computed(() => authStore.userSeq);
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value;
+};
+const navigateTo = (route) => {
+  selectedOption.value = route; // 선택된 옵션을 저장하여 스타일링에 사용
+  isDropdownOpen.value = false; // 메뉴를 숨김
+  if (route === "editProfile") {
+    router.push(`/user/${userSeq.value}/update`);
+  } else if (route === "deleteAccount") {
+    router.push(`/user/${userSeq.value}/withdraw`);
+  }
+};
 
 // view 로 부터 정보 받아옴
 const props = defineProps({
@@ -124,6 +141,21 @@ const isVisibleFollow = () => {
   <div>{{  }}</div>
   <ElementBox id="profile-box" class="side-box">
 
+    <!-- 드롭다운 메뉴 아이콘 -->
+    <div class="dropdown-container">
+      <i class="fa-solid fa-ellipsis" @click="toggleDropdown"></i>
+
+      <!-- 드롭다운 메뉴 -->
+      <div v-if="isDropdownOpen" class="dropdown-menu">
+        <button @click="navigateTo('editProfile')" :class="{ active: selectedOption === 'editProfile' }">
+          회원정보 수정
+        </button>
+        <button @click="navigateTo('deleteAccount')" :class="{ active: selectedOption === 'deleteAccount' }">
+          회원 탈퇴
+        </button>
+      </div>
+    </div>
+
     <section class="level">
       <span>포인트 : {{ userData.activityInfo.activityPoint }}</span>
       <br>
@@ -150,6 +182,7 @@ const isVisibleFollow = () => {
     <section class="activity-info">
       <div>
         <div>
+          <br>
           <span>후기</span>
         </div>
 
@@ -237,5 +270,43 @@ const isVisibleFollow = () => {
   left: 400px;
   z-index: 10;
 
+}
+
+.dropdown-container {
+  position: absolute;
+  display: inline-block;
+}
+.fa-ellipsis:hover {
+  color: white;
+  background-color: #ff6f20;
+}
+.fa-ellipsis[data-v-3ae0044e] {
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 13px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-menu button {
+  background: none;
+  border: none;
+  color: #333;
+  padding: 8px 12px;
+  text-align: left;
+  cursor: pointer;
+}
+.dropdown-menu button:hover {
+  background-color: rgba(255, 111, 32, 0.28); /* 주황색 배경 */
+  color: white; /* 흰색 글씨 */
 }
 </style>

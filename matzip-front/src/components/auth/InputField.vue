@@ -15,11 +15,15 @@ const props = defineProps({
     type: Object,
     default: () => ({}),
   },
+showLabel: {
+  type: Boolean,
+default: true, // 기본값을 true로 설정하여 기본적으로 라벨을 표시
+}
 });
 </script>
 <template>
   <div class="input-field">
-    <label :for="id">{{ label }}</label>
+    <label  v-if="showLabel" :for="id">{{ label }}</label>
     <input
         :type="type"
         :id="id"

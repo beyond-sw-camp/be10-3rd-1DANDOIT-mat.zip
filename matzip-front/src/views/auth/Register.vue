@@ -16,6 +16,7 @@ const formData = ref({
   userNickname: '',
 });
 
+// 핸드폰 번호 입력 양식 '010-0000-0000'에서 '-'을 제외하고 숫자만 추출
 const formatPhoneForServer = (phone) => {
   return phone.replace(/\D/g, '');
 };
@@ -151,6 +152,7 @@ const checkPhoneNumber = async () => {
       return;
     }
 
+    // 번호 포맷 변경(숫자추출)
     const formattedPhone = formatPhoneForServer(formData.value.userPhone);
     const response = await axios.post('https://matzipapi.huichan.kr/user/api/v1/user/check-phone-duplicate', {
       userPhone: formattedPhone,
@@ -311,8 +313,13 @@ const signup = async () => {
 
 <style scoped>
 .sign-up-form {
-  max-width: 500px;
+  flex: 1;
+  padding: 20px;
+  max-width: 600px;
   margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -342,7 +349,7 @@ h2 {
 
 button {
   padding: 0.5rem 1rem;
-  font-size: 0.875rem; /* 버튼 글자 크기 조정 */
+  font-size: 0.875rem;
 }
 
 .input-div button {
@@ -362,11 +369,11 @@ button {
 }
 
 .verification-box {
-  border: 2px solid #ff7f50; /* 코랄색 테두리 */
-  border-radius: 10px; /* 모서리를 둥글게 */
+  border: 2px solid #ff7f50;
+  border-radius: 10px;
   padding: 15px; /* 내부 여백 */
   margin-top: 15px; /* 상단 여백 */
-  background-color: #fffaf0; /* 약간의 노란색 배경 */
+  background-color: #fffaf0;
 }
 
 .verification-box p {
